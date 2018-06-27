@@ -53,7 +53,7 @@ for (i in seq_along(body$latlon)) # for cyklus - pro všechny obce zjistit a zaz
 st_geometry(body) <- NULL # zrušení geometrie - z sf objektu se stane prostý data frame
 
 obce <- obce %>% # zpátky pracuju s polygony
-  select(kod) %>% # tedy vlastně + skrytý sloupec geometrie (kvůli kterému to celé dělám...)
+  select(kod) %>% # tedy vlastně kód obce + skrytý sloupec geometrie (kvůli kterému to celé dělám... :)
   inner_join(body, by = "kod") %>%
   mutate(dojezd = gross / 60) # minuty místo sekund
 
