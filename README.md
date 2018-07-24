@@ -12,7 +12,7 @@ Mám k tomu pár komentářů, vesměs technických:
 
 * kód je napsaný v erku, což nemusí být každého šálek kávy; s tím bohužel nejde nic dělat...
 * dvě knihovny - `ggmap`a `gmapsdistance` jsou na CRANu s chybami, je třeba použít GitHubovou verzi (kód pro instalaci je v komentáři ve skriptu)
-* do kódu je třeba doplnit vlastní klíč pro [Google Distance Matrix API](https://console.cloud.google.com/apis/library/distance-matrix-backend.googleapis.com), což je placená služba (za vytočení mapy si vyúčtují $1.92).  
+* do kódu je třeba doplnit vlastní klíč pro [Google Distance Matrix API](https://console.cloud.google.com/apis/library/distance-matrix-backend.googleapis.com), což je služba vyžadující registraci. Za vytočení mapy si vyúčtují přibližně $2 při měsíčním kreditu $200 - cena jako taková tedy není problém, ale API key potřebujete.  
 O svůj se nepodělím, protože svobodný software mám za *free* spíše v kontextu *free speech* nežli *free beer* = rád si kecám co chci - a přitom piju za své :)
 * v kódu je vhodné změnit lokalitu cíle cesty v proměnné `pupek_sveta` - ta se následně ogeokóduje přes Google, který snese i trošku robustnější zacházení. Možno uvézt adresu, nebo třeba název budovy.  
 "Kramářova vila" je platný cíl, stejně jako "Pankrácká věznice" či "Mauzoleum VI Lenina".
